@@ -1,0 +1,6 @@
+<% content_for :title, "Create Account" %>
+
+<%= link_to sanitize("&larr; Home"), root_path %>
+<h1>Create Account</h1>
+
+<%= render "form", user: @user %>
