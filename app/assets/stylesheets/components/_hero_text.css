@@ -1,0 +1,10 @@
+.hero-text {
+  cursor: default;
+  font-size: 2rem;
+}
+
+.hero-text:visited,
+.hero-text:hover,
+.hero-text:active {
+  color: var(--color-primary-rotate);
+}

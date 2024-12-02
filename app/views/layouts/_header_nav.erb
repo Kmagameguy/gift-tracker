@@ -1,0 +1,13 @@
+<nav id="header-nav">
+  <div>
+    <a href="#" class="hero-text">Gift Tracker</a>
+  </div>
+  <div id="user-menu">
+    <% if Current.user.blank? %>
+      <%= link_to "Login", new_session_path %>
+    <% else %>
+      <%= Current.user.username %>
+      <%= button_to "Log out", session_path(Current.session.id), method: :delete%>
+    <% end %>
+  </div>
+</nav>
